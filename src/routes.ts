@@ -1,14 +1,19 @@
 import { Router } from 'express';
 import TodoController from './controllers/TodoController';
-
+import AuthController from './controllers/AuthController';
+import auth from './middlewares/auth';
 const routes = Router();
 
-routes.get('/todos', TodoController.index);
+routes.get('/todos', auth, TodoController.index);
 
-routes.post('/todos', TodoController.store);
+routes.post('/todos', auth, TodoController.store);
 
-routes.delete('/todos/:id', TodoController.destroy);
+routes.delete('/todos/:id', auth, TodoController.destroy);
 
-routes.put('/todos/:id', TodoController.toggle);
+routes.put('/todos/:id', auth, TodoController.toggle);
+
+routes.post('/user/register', AuthController.register);
+
+routes.post('/user/signin', AuthController.signIn);
 
 export default routes;
