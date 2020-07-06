@@ -14,6 +14,12 @@ interface IUser {
 const users:IUser[] = [];
 
 class AuthController {
+  public async show(req: Request, res:Response ) {
+    const{ name, email, password} = req.body;
+
+    return res.status(200).json({name, email, password});
+  }
+
   public async register(req:Request, res: Response) {
     const {name, email, password} = req.body;
     if((!name && !email && !password)) return res.status(400).json({error: "All fields must be provided"});  

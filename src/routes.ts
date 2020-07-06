@@ -14,6 +14,9 @@ routes.put('/todos/:id', auth, TodoController.toggle);
 
 routes.post('/user/register', AuthController.register);
 
+routes.get('/user/register', AuthController.show);
+
 routes.post('/user/signin', AuthController.signIn);
+
 
 export default routes;

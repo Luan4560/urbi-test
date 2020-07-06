@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="title">
+    <h1>To-Do</h1>
+    <h2>List</h2>
+  </div>
+  
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <label>Nome</label>
+    <input type="text">
+
+   <label>Email</label>
+   <input type="email" name="email">
+ 
+   <label>Senha</label>
+   <input type="password">
+ 
+   <button type="submit">Registrar</button>
+  </form>
+
+
+  <div class="line"></div>
+   
+  <div class="btn-create">
+    <a href="#">
+      < Voltar
+    </a>
+   </div>
+ </div>
+

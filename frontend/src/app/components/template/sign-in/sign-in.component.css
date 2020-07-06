@@ -1,0 +1,59 @@
+
+.container {
+  height: 100vh;
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+h2 {
+  margin-left: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 436px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #3333;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.line {
+  border: 1px solid #323232;
+  width: 20%;
+  margin: 30px;
+}
+
+.btn-todo {
+  background: #FE9E0E;
+  border-radius: 5px;
+  border: 1px solid #3333;
+  font-size: 16px;
+  cursor: pointer;
+  width: 436px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-todo:hover {
+  background: #323232;
+}
+
+.btn-create a {
+  letter-spacing: 1px;
+  font-size: 16px;
+  color: #FE9E0E;
+  text-decoration: none;
+}

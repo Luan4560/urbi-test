@@ -1,0 +1,96 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 55px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.title {
+  text-align: center;
+  
+}
+
+.title h2{
+  padding-left: 55px;
+}
+
+.info p {
+  font-size: 16px;
+  color: #606060;
+}
+
+hr {
+  border: 1px solid #323232;
+ 
+  margin-bottom: 30px;
+}       
+
+.add-todo {
+  display: flex;
+  justify-content: center;
+}
+
+.add-todo input {
+  width: 960px;
+  height: 38px;
+  border-radius: 5px;
+  border: transparent;
+  padding-left: 10px;
+
+}
+
+.add-todo button {
+  background: #FE9E0E;
+  color: #fff;
+  border: transparent;
+  border-radius: 5px;
+  margin-left: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.add-todo button:hover {
+  background:  #707070;;
+}
+
+.columns  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.columns li span{
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns ul li {
+  border-radius: 5px;
+  width: 1050px;
+  background:#262626;;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.columns ul li:hover {
+  background-color: #707070;
+}
+
+.columns button {
+  background:#FE9E0E ;
+  border: none;
+  padding: 5px 25px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.columns button:hover {
+  background: #3C3C3C;
+}
